@@ -17,3 +17,5 @@ RUN apk add alpine-sdk lua-aports && \
 RUN [ "cross-build-end" ]
 
 ADD build.sh /build.sh
+
+ENTRYPOINT ["/build.sh"]
