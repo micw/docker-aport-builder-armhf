@@ -16,7 +16,7 @@ docker run -it --rm \
   -v $(pwd)/packages:/home/build/packages \
   --user build --workdir /aports \
   micwy/aport-builder-armhf:latest \
-  /build.sh testing/mypackage
+  testing/mypackage
 ```
 
 * The package will be in the "packages" sub directory
